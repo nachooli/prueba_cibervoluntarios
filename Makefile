@@ -8,7 +8,8 @@ update-database-schema:
 	docker-compose exec symfony php bin/console doctrine:schema:update --force
 
 load-fixtures-data:
-	docker-compose exec symfony php bin/console doctrine:fixtures:load
+# -n para que no pida confirmación
+	docker-compose exec symfony php bin/console doctrine:fixtures:load -n
 
 run-tests:
 	docker-compose exec symfony php -dxdebug.mode=off vendor/bin/phpunit
