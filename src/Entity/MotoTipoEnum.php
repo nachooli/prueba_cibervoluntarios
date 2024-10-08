@@ -10,7 +10,7 @@ namespace App\Entity;
  * (Se podría hacer una clase abstraca de la que heredar para hacer más detallado esto como EnumBase,
  * por ejemplo para poner los nombres más en idioma humano: scooter => "Scooter")
  */
-class MotoEnum
+class MotoTipoEnum
 {
     public const TIPO_MOTO_SCOOTER = "scooter";
     public const TIPO_MOTO_CROSS = "cross";
